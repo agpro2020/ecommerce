@@ -1,0 +1,31 @@
+spring:
+  jackson:
+    serialization:
+      wrap-root-value: false
+  datasource:
+        url: jdbc:mysql://localhost:3306/ecommerce?useSSL=false&serverTimezone=UTC
+        username: root
+        password: Bouse1234
+        driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+        database-platform: org.hibernate.dialect.MySQL8Dialect
+        hibernate:
+          ddl-auto: update
+
+
+server:
+  port : 8080
+
+springdoc:
+  api-docs:
+    enabled: true
+    path: /doc/api-docs
+  swagger-ui:
+    enabled: true
+    path: /doc/swagger-ui-custom.html
+    operationsSorter: method
+
+
+#BASE DE DATOS---
+
+
