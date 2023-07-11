@@ -7,6 +7,10 @@ import lombok.NoArgsConstructor;
 import javax.persistence.*;
 import java.util.Date;
 
+/**
+ * @author [Abel De Jesus]
+ * @version 1.0
+ */
 @NoArgsConstructor
 @Data
 @Entity
@@ -22,7 +26,7 @@ public class Detalle {
     private boolean nuevo;
     @Column(name = "FECHA_FABRICACION")
     Date fechaCreacion;
-    
+
 
     @OneToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "id_producto", referencedColumnName = "id")

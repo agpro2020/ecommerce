@@ -10,6 +10,11 @@ import org.springframework.stereotype.Component;
 import javax.xml.crypto.Data;
 import java.util.Date;
 
+
+/**
+ * @author [Abel De Jesus]
+ * @version 1.0
+ */
 @Component
 public class ProductoUtils {
 
